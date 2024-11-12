@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horta Inteligente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .user-info {
+            background-color: #e9ecef;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-shrink: 0;
+        }
+        .user-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .user-info div {
+            display: flex;
+            align-items: center;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .card .value {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .card .graph img {
+            width: 100%;
+        }
+        /* Ajustes para dispositivos móveis */
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden; /* Impede barra de rolagem horizontal em dispositivos móveis */
+            }
+            .dashboard {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta as colunas para dispositivos móveis */
+            }
+            .user-info {
+                flex-direction: column; /* Alinha os itens da barra de navegação em dispositivos móveis */
+                align-items: flex-start;
+            }
+            .buttons {
+                flex-direction: column; /* Empilha os botões em dispositivos móveis */
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Horta Inteligente</div>
+    <div class="user-info">
+        <div>
+            <img src="https://i.ibb.co/BB0xk37/IMG-1281.png" alt="User" width="50" height="50">
+            <div>
+                <p>Usuário: Joel Marciano Oliveira<br>Função: Administrador</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="hortaconectada.html" style="text-decoration: none; color: inherit;"><button>Voltar</button>
+            </a>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="card">
+            <h3>Indisponível</h3>
+            <div class="value"></div>
+            <div class="graph">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Indisponível</h3>
+            <div class="value"></div>
+            <div class="graph">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Indisponível</h3>
+            <div class="value"></div>
+            <div class="graph">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Indisponível</h3>
+            <div class="value"></div>
+            <div class="graph">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Indisponível</h3>
+            <div class="value"></div>
+            <div class="graph">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Indisponível</h3>
+            <div class="value"></div>
+            <div class="graph">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Indisponível</h3>
+            <div class="value"></div>
+            <div class="graph">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Indisponível</h3>
+            <div class="value"></div>
+            <div class="graph">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Indisponível</h3>
+            <div class="value"></div>
+            <div class="graph">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
