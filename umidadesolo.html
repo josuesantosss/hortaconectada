@@ -1,0 +1,163 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horta Inteligente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .table-container {
+            width: 40%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        .graph-container {
+            width: 55%;
+        }
+        .graph-container img {
+            width: 100%;
+        }
+        .user-info {
+            background-color: #e9ecef;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .user-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .user-info div {
+            display: flex;
+            align-items: center;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Horta Inteligente</div>
+    <div class="user-info">
+        <div>
+            <img src="https://i.ibb.co/BB0xk37/IMG-1281.png" alt="User" width="50" height="50">
+            <div>
+                <p>Usuário: Joel Marciano Oliveira<br>Função: Administrador</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="configuracoes.html" style="text-decoration: none; color: inherit;"><button>Configurações</button>
+            </a>
+            <a href="hortaconectada.html" style="text-decoration: none; color: inherit;"><button>Voltar</button>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="table-container">
+            <h2>Temperatura Local</h2>
+            <table>
+    <tr>
+        <th>Horário</th>
+        <th>%</th>
+    </tr>
+    <tr>
+        <td>16:00</td>
+        <td>65%</td>
+    </tr>
+    <tr>
+        <td>15:30</td>
+        <td>67%</td>
+    </tr>
+    <tr>
+        <td>15:00</td>
+        <td>68%</td>
+    </tr>
+    <tr>
+        <td>14:30</td>
+        <td>70%</td>
+    </tr>
+    <tr>
+        <td>14:00</td>
+        <td>72%</td>
+    </tr>
+    <tr>
+        <td>13:30</td>
+        <td>74%</td>
+    </tr>
+    <tr>
+        <td>13:00</td>
+        <td>75%</td>
+    </tr>
+    <tr>
+        <td>12:30</td>
+        <td>77%</td>
+    </tr>
+    <tr>
+        <td>12:00</td>
+        <td>78%</td>
+    </tr>
+    <tr>
+        <td>11:30</td>
+        <td>80%</td>
+    </tr>
+    <tr>
+        <td>11:00</td>
+        <td>82%</td>
+    </tr>
+    <tr>
+        <td>10:30</td>
+        <td>84%</td>
+    </tr>
+    <tr>
+        <td>10:00</td>
+        <td>85%</td>
+    </tr>
+</table>
+
+        </div>
+        <div class="graph-container">
+            <h2>Gráfico da Umidade do Solo</h2>
+            <img src="https://www.researchgate.net/profile/Mayte-Coutinho/publication/280684578/figure/fig1/AS:391421426192395@1470333548946/Figura-2-Variacao-da-temperatura-do-ar-e-umidade-relativa-para-o-ano-de-2010.png" alt="Gráfico de Temperatura">
+        </div>
+    </div>
+</body>
+</html>
