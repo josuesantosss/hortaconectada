@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horta Inteligente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .table-container {
+            width: 40%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        .graph-container {
+            width: 55%;
+        }
+        .graph-container img {
+            width: 100%;
+        }
+        .user-info {
+            background-color: #e9ecef;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .user-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .user-info div {
+            display: flex;
+            align-items: center;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Horta Inteligente</div>
+    <div class="user-info">
+        <div>
+            <img src="https://i.ibb.co/BB0xk37/IMG-1281.png" alt="User" width="50" height="50">
+            <div>
+                <p>Usuário: Joel Marciano Oliveira<br>Função: Administrador</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="configuracoes.html" style="text-decoration: none; color: inherit;"><button>Configurações</button>
+            </a>
+            <a href="hortaconectada.html" style="text-decoration: none; color: inherit;"><button>Voltar</button>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="table-container">
+            <h2>Temperatura Local</h2>
+            <table>
+                <tr>
+                    <th>Horário</th>
+                    <th>°C</th>
+                </tr>
+                <tr>
+                    <td>16:00</td>
+                    <td>24°C</td>
+                </tr>
+                <tr>
+                    <td>15:30</td>
+                    <td>23°C</td>
+                </tr>
+                <tr>
+                    <td>15:00</td>
+                    <td>23°C</td>
+                </tr>
+                <tr>
+                    <td>14:30</td>
+                    <td>22°C</td>
+                </tr>
+                <tr>
+                    <td>14:00</td>
+                    <td>22°C</td>
+                </tr>
+                <tr>
+                    <td>13:30</td>
+                    <td>21°C</td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td>21°C</td>
+                </tr>
+                <tr>
+                    <td>12:30</td>
+                    <td>20°C</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td>20°C</td>
+                </tr>
+                <tr>
+                    <td>11:30</td>
+                    <td>19°C</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>19°C</td>
+                </tr>
+                <tr>
+                    <td>10:30</td>
+                    <td>18°C</td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>18°C</td>
+                </tr>
+            </table>
+        </div>
+        <div class="graph-container">
+            <h2>Gráfico de Temperatura</h2>
+            <img src="https://www.researchgate.net/profile/Gerson-Medeiros/publication/344634483/figure/fig4/AS:946226493149190@1602609384134/Figura-1-grafico-da-temperatura-ao-longo-do-processo-Fonte-Autores-2020.png" alt="Gráfico de Temperatura">
+        </div>
+    </div>
+</body>
+</html>
