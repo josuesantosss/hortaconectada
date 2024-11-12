@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horta Inteligente</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4CE486;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .user-info {
+            background-color: #e9ecef;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .user-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .user-info div {
+            display: flex;
+            align-items: center;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .card .value {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        .value { 
+            font-size: 24px; 
+            font-weight: bold; 
+            display: flex; 
+            justify-content: center; 
+        }
+
+        /* Ajustes para dispositivos móveis */
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden; /* Impede barra de rolagem horizontal em dispositivos móveis */
+            }
+            .dashboard {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta as colunas para dispositivos móveis */
+            }
+            .user-info {
+                flex-direction: column; /* Alinha os itens da barra de navegação em dispositivos móveis */
+                align-items: flex-start;
+            }
+            .buttons {
+                flex-direction: column; /* Empilha os botões em dispositivos móveis */
+                gap: 10px;
+            }
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="header">Horta Inteligente</div>
+    <div class="user-info">
+        <div>
+            <img src="https://i.ibb.co/BB0xk37/IMG-1281.png" alt="User" width="50" height="50">
+            <div>
+                <p>Usuário: Joel Marciano Oliveira<br>Função: Administrador</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Câmeras</button>
+            <a href="configuracoes.html" style="text-decoration: none; color: inherit;"><button>Configurações</button></a>
+            <a href="index.html" style="text-decoration: none; color: inherit;"><button>Sair</button></a>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="card">
+            <a href="temperatura.html" style="text-decoration: none; color: inherit;">
+                <h3>Temperatura Local</h3>
+                <div class="value">24°C</div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="umidadesolo.html" style="text-decoration: none; color: inherit;">
+                <h3>Umidade do Solo</h3>
+                <div class="value">40%</div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="reservatorioagua.html" style="text-decoration: none; color: inherit;">
+                <h3>Reservatório de Água</h3>
+                <div class="value">19,976.9 L</div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="eletricidade.html" style="text-decoration: none; color: inherit;">
+                <h3>Monitoramento de Voltagem</h3>
+                <div class="value">220 V</div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="vento.html" style="text-decoration: none; color: inherit;">
+                <h3>Velocidade do Vento</h3>
+                <div class="value">15 km/h</div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="culturas.html" style="text-decoration: none; color: inherit;">
+                <h3>Culturas</h3>
+                <div class="value">🍅🥬🎃🥒🌿🥬</div> 
+            </a>
+        </div>
+        <div class="card">
+            <h3>Indisponível</h3>
+            <div class="value"></div>
+        </div>
+        <div class="card">
+            <h3>Indisponível</h3>
+            <div class="value"></div>
+        </div>
+        <div class="card">
+            <h3>Indisponível</h3>
+            <div class="value"></div>
+        </div>
+    </div>
+</body>
+</html>
