@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Voltagem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .table-container {
+            width: 50%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        .user-info {
+            background-color: #e9ecef;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .user-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .user-info div {
+            display: flex;
+            align-items: center;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Monitoramento de Voltagem</div>
+    <div class="user-info">
+        <div>
+            <img src="https://i.ibb.co/BB0xk37/IMG-1281.png" alt="User" width="50" height="50">
+            <div>
+                <p>Usuário: Joel Marciano Oliveira<br>Função: Administrador</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="configuracoes.html" style="text-decoration: none; color: inherit;">
+                <button>Configurações</button>
+            </a>
+            <a href="hortaconectada.html" style="text-decoration: none; color: inherit;">
+                <button>Voltar</button>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="table-container">
+            <h2>Monitoramento de Voltagem</h2>
+            <table>
+                <tr>
+                    <th>Horário</th>
+                    <th>Voltagem Atual (V)</th>
+                </tr>
+                <tr>
+                    <td>16:00</td>
+                    <td>220 V</td>
+                </tr>
+                <tr>
+                    <td>15:30</td>
+                    <td>218 V</td>
+                </tr>
+                <tr>
+                    <td>15:00</td>
+                    <td>221 V</td>
+                </tr>
+                <tr>
+                    <td>14:30</td>
+                    <td>219 V</td>
+                </tr>
+                <tr>
+                    <td>14:00</td>
+                    <td>217 V</td>
+                </tr>
+                <tr>
+                    <td>13:30</td>
+                    <td>222 V</td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td>220 V</td>
+                </tr>
+                <tr>
+                    <td>12:30</td>
+                    <td>219 V</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td>221 V</td>
+                </tr>
+                <tr>
+                    <td>11:30</td>
+                    <td>218 V</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>220 V</td>
+                </tr>
+                <tr>
+                    <td>10:30</td>
+                    <td>219 V</td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>220 V</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
