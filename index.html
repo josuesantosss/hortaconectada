@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horta Conectada - Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #4CE486;
+            margin: 0;
+        }
+        .login-container {
+            position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+            border: 1px solid #ccc;
+            padding: 70px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: black; /* Mudança para texto preto para melhor contraste */
+            width: 300px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
+        }
+        .login-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://i.ibb.co/BB0xk37/IMG-1281.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 100; /* Transparência da imagem de fundo */
+            border-radius: 5px;
+            z-index: -1; /* Põe o pseudo-elemento atrás do conteúdo */
+        }
+        .login-container h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+        /* Ajustes para dispositivos móveis */
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden; /* Impede barra de rolagem horizontal em dispositivos móveis */
+            }
+            .dashboard {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta as colunas para dispositivos móveis */
+            }
+            .user-info {
+                flex-direction: column; /* Alinha os itens da barra de navegação em dispositivos móveis */
+                align-items: flex-start;
+            }
+            .buttons {
+                flex-direction: column; /* Empilha os botões em dispositivos móveis */
+                gap: 10px;
+            }
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Horta Conectada - Login</h2>
+        <form action="hortaconectada.html" method="get">
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" required>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>
