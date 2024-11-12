@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horta Inteligente - Cultura Tomate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .header2 {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .user-info {
+            background-color: #e9ecef;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .user-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .user-info div {
+            display: flex;
+            align-items: center;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Ajustes para dispositivos móveis */
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden; /* Impede barra de rolagem horizontal em dispositivos móveis */
+            }
+            .dashboard {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta as colunas para dispositivos móveis */
+            }
+            .user-info {
+                flex-direction: column; /* Alinha os itens da barra de navegação em dispositivos móveis */
+                align-items: flex-start;
+            }
+            .buttons {
+                flex-direction: column; /* Empilha os botões em dispositivos móveis */
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Horta Inteligente - Cultura da Alface</div>
+    <div class="user-info">
+        <div>
+            <img src="https://i.ibb.co/BB0xk37/IMG-1281.png" alt="User" width="50" height="50">
+            <div>
+                <p>Usuário: Joel Marciano Oliveira<br>Função: Administrador</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="../culturas.html" style="text-decoration: none; color: inherit;">
+                <button>Culturas</button>
+            </a>
+            <a href="../configuracoes.html" style="text-decoration: none; color: inherit;"><button>Configurações</button>
+            </a>
+            <a href="../hortaconectada.html" style="text-decoration: none; color: inherit;">
+                <button>Página Inicial</button>
+            </a>
+        </div>
+    </div>
+    <div class="header">Cultura da Alface</div>
+    <div class="dashboard">
+        <div class="card">
+            <h3 style="text-align: center;">Umidade do Solo</h3>
+            <table>
+                <tr>
+                    <th>Horário</th>
+                    <th>Umidade (%)</th>
+                </tr>
+                <tr><td>16:00</td><td>65%</td></tr>
+                <tr><td>15:30</td><td>67%</td></tr>
+                <tr><td>15:00</td><td>68%</td></tr>
+                <tr><td>14:30</td><td>70%</td></tr>
+                <tr><td>14:00</td><td>72%</td></tr>
+                <tr><td>13:30</td><td>74%</td></tr>
+                <tr><td>13:00</td><td>75%</td></tr>
+                <tr><td>12:30</td><td>77%</td></tr>
+                <tr><td>12:00</td><td>78%</td></tr>
+                <tr><td>11:30</td><td>80%</td></tr>
+                <tr><td>11:00</td><td>82%</td></tr>
+                <tr><td>10:30</td><td>84%</td></tr>
+                <tr><td>10:00</td><td>85%</td></tr>
+            </table>
+        </div>
+        <div class="card">
+            <h3 style="text-align: center;">Luminosidade</h3>
+            <table>
+                <tr>
+                    <th>Horário</th>
+                    <th>Luminosidade (lux)</th>
+                </tr>
+                <tr><td>16:00</td><td>2500</td></tr>
+                <tr><td>15:30</td><td>2600</td></tr>
+                <tr><td>15:00</td><td>2700</td></tr>
+                <tr><td>14:30</td><td>2800</td></tr>
+                <tr><td>14:00</td><td>2900</td></tr>
+                <tr><td>13:30</td><td>3000</td></tr>
+                <tr><td>13:00</td><td>3100</td></tr>
+                <tr><td>12:30</td><td>3200</td></tr>
+                <tr><td>12:00</td><td>3300</td></tr>
+                <tr><td>11:30</td><td>3400</td></tr>
+                <tr><td>11:00</td><td>3500</td></tr>
+                <tr><td>10:30</td><td>3600</td></tr>
+                <tr><td>10:00</td><td>3700</td></tr>
+            </table>
+        </div>
+        <div class="card">
+            <h3 style="text-align: center;">Vazão de Água</h3>
+            <table>
+                <tr>
+                    <th>Horário</th>
+                    <th>Vazão (L/min)</th>
+                </tr>
+                <tr><td>16:00</td><td>0.9</td></tr>
+                <tr><td>15:30</td><td>1.0</td></tr>
+                <tr><td>15:00</td><td>0.8</td></tr>
+                <tr><td>14:30</td><td>1.0</td></tr>
+                <tr><td>14:00</td><td>1.6</td></tr>
+                <tr><td>13:30</td><td>1.7</td></tr>
+                <tr><td>13:00</td><td>1.4</td></tr>
+                <tr><td>12:30</td><td>1.3</td></tr>
+                <tr><td>12:00</td><td>1.5</td></tr>
+                <tr><td>11:30</td><td>1.2</td></tr>
+                <tr><td>11:00</td><td>1.0</td></tr>
+                <tr><td>10:30</td><td>0.9</td></tr>
+                <tr><td>10:00</td><td>0.8</td></tr>
+            </table>
+        </div>
+        <div class="card">
+            <h3 style="text-align: center;">Temperatura da Estufa</h3>
+            <table>
+                <tr>
+                    <th>Horário</th>
+                    <th>Temperatura (°C)</th>
+                </tr>
+                <tr><td>16:00</td><td>24°C</td></tr>
+                <tr><td>15:30</td><td>23°C</td></tr>
+                <tr><td>15:00</td><td>23°C</td></tr>
+                <tr><td>14:30</td><td>22°C</td></tr>
+                <tr><td>14:00</td><td>22°C</td></tr>
+                <tr><td>13:30</td><td>21°C</td></tr>
+                <tr><td>13:00</td><td>21°C</td></tr>
+                <tr><td>12:30</td><td>20°C</td></tr>
+                <tr><td>12:00</td><td>20°C</td></tr>
+                <tr><td>11:30</td><td>19°C</td></tr>
+                <tr><td>11:00</td><td>19°C</td></tr>
+                <tr><td>10:30</td><td>18°C</td></tr>
+                <tr><td>10:00</td><td>18°C</td></tr>
+            </table>
+            </div>
+        </div>
+    </body>
+</html>
+
