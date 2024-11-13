@@ -12,8 +12,26 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #4CE486;
+            position: relative;
+            height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
         }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/backgroundLogin.png');
+            background-size: cover; /* Para cobrir 100% da tela */
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.3; /* Transparência de 30% */
+            z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo do body */
+        }
+
+
         .header {
             background-color: #007bff;
             color: white;
@@ -117,7 +135,7 @@
     <div class="header">Roça Conectada</div>
     <div class="user-info">
         <div>
-            <img src="img/rocaconectada.png" alt="User" width="50" height="50">
+            <img src="https://i.ibb.co/NmQpjLf/Roc-a-Conectada.png" alt="User" width="50" height="50">
             <div>
                 <p>Usuário: Joel Marciano Oliveira<br>Função: Administrador</p>
             </div>
