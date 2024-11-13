@@ -35,28 +35,17 @@
         .login-container {
             position: relative; /* Necessário para o posicionamento do pseudo-elemento */
             border: 1px solid #ccc;
-            padding: 70px;
+            padding: 50px 20px; /* Ajustei o padding para dar mais espaço ao redor */
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             color: black; /* Mudança para texto preto para melhor contraste */
             width: 300px;
             text-align: center;
             background-color: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
-            
-        }
-        .login-container::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            /* background-image: url('img/rocaconectada.png'); */
-            background-size: cover;
-            background-position: center;
-            opacity: 100; /* Transparência da imagem de fundo */
-            border-radius: 5px;
-            z-index: -1; /* Põe o pseudo-elemento atrás do conteúdo */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centraliza o conteúdo verticalmente */
+            align-items: center; /* Centraliza o conteúdo horizontalmente */
         }
         .login-container h2 {
             margin-top: 0;
@@ -70,18 +59,19 @@
         .login-container input[type="password"] {
             width: 100%;
             padding: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 15px; /* Menor margem entre os campos */
             border: 1px solid #ccc;
             border-radius: 5px;
         }
         .login-container button {
-            width: 100%;
-            padding: 10px;
+            width: auto; /* Largura automática para diminuir o tamanho */
+            padding: 8px 20px; /* Menor padding para o botão */
             background-color: #007bff;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 10px; /* Espaço entre o botão e os campos */
         }
         .login-container button:hover {
             background-color: #0056b3;
@@ -100,10 +90,9 @@
             }
             .buttons {
                 flex-direction: column; /* Empilha os botões em dispositivos móveis */
-                gap: 10px;
+                gap: 5px;
             }
         }
-    </style>
     </style>
 </head>
 <body>
